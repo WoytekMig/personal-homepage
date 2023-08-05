@@ -1,5 +1,6 @@
+import { HireMeButton } from "./HireMeButton";
 import photo from "./images/wm.png";
-import { AboutMe, Container, HeaderWrapper, HireMeButton, MyPhoto, NameHeader, SubHeader } from "./styled";
+import { AboutMe, Container, HeaderWrapper, MyPhoto, NameHeader, SubHeader } from "./styled";
 
 
 function Header() {
@@ -10,12 +11,12 @@ function Header() {
             <Container>
                 <SubHeader>This is</SubHeader>
                 <NameHeader>Wojtek Migdał</NameHeader>
-                <AboutMe> 👨‍💻💻I'm a passionate Frontend Developer fascinated especially by React. 
+                <AboutMe> 👨‍💻💻I'm a passionate Frontend Developer fascinated especially by React.
                     Currently I'm looking for a new job opportunities. </AboutMe>
-          {/*        <HireMeButton /> */}
+                <HireMeButton />
             </Container>
         </HeaderWrapper>
     )
-}; 
+};
 
 export default Header;

@@ -17,6 +17,7 @@ export const theme = {
         primaryBackground: color.WhiteLilac,
         primaryText: color.SlateGrey,
         headerText: color.MineShaft,
+        hireMeButton: color.ScienceBlue,
+    },
 
-    }
 };

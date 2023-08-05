@@ -43,7 +43,3 @@ export const AboutMe = styled.p`
     line-height: 140%; /* 28px */
     letter-spacing: 1px;
 `;
-
-/* export const HireMeButton = styled(HireMe)`
-    background-color: ${({ theme }) => theme.light.headerText};  
-`; */
