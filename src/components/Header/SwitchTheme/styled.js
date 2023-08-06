@@ -17,6 +17,14 @@ export const StyledButton = styled.button`
     gap: 12px;
     text-transform: uppercase;
     font-family: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    border: none;
+    background-color: ${({ theme }) => theme.primaryBackground};
+    color: ${({ theme }) => theme.primaryText}; 
+
 `;
 
 export const ToggleWrapper = styled.div`
