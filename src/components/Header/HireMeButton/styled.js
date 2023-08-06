@@ -19,11 +19,11 @@ export const StyledButton = styled.button`
     font-weight: 700;
     line-height: normal;
     color: white;
-    background-color: ${({ theme }) => theme.light.hireMeButton};
+    background-color: ${({ theme }) => theme.hireMeButton};
 `;
 
 export const Icon = styled(HireMeIcon)`
     width: 24px;
     height: 24px;
-    background-color: ${({ theme }) => theme.light.hireMeButton};
+    background-color: ${({ theme }) => theme.hireMeButton};
 `;

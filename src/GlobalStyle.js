@@ -2,9 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 html {
-    background-color: ${({ theme }) => theme.light.primaryBackground};
+    background-color: ${({ theme }) => theme.primaryBackground};
     font-family: 'Inter', sans-serif;
-    color: ${({ theme }) => theme.light.primaryText};
+    color: ${({ theme }) => theme.primaryText};
     align-items: center;
     justify-content: center; 
 }

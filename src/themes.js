@@ -9,31 +9,31 @@ const color = {
     Black: "black",
 };
 
-
-export const theme = {
+const breakpoints = {
     breakpoint: {
         mobileMax: 767,
     },
+}
 
-    light: {
-        primaryBackground: color.WhiteLilac,
-        primaryText: color.SlateGrey,
-        headerText: color.MineShaft,
-        hireMeButton: color.ScienceBlue,
-        themeButtonBackground: color.Mercury,
-        themeGraphicBackground: color.SlateGrey,
-        themeGraphic: color.White,
-    },
+export const light = {
+    ...breakpoints,
 
-    dark: {
-        primaryBackground: color.Black,
-        primaryText: color.Black,
-        headerText: color.Black,
-        hireMeButton: color.Black,
-        themeButtonBackground: color.Black,
-        themeGraphicBackground: color.Black,
-        themeGraphic: color.Black,
-    },
+    primaryBackground: color.WhiteLilac,
+    primaryText: color.SlateGrey,
+    headerText: color.MineShaft,
+    hireMeButton: color.ScienceBlue,
+    themeButtonBackground: color.Mercury,
+    themeGraphicBackground: color.SlateGrey,
+    themeGraphic: color.White,
+};
 
-
+export const dark = {
+    ...breakpoints,
+    primaryBackground: color.Black,
+    primaryText: color.Black,
+    headerText: color.Black,
+    hireMeButton: color.Black,
+    themeButtonBackground: color.Black,
+    themeGraphicBackground: color.Black,
+    themeGraphic: color.Black,
 };

@@ -14,7 +14,7 @@ export const MyPhoto = styled.img`
     border-radius: 384px;
     height: auto;
     width: 100%;
-    background-color: ${({ theme }) => theme.light.primaryText};
+    background-color: ${({ theme }) => theme.primaryText};
 `;
 
 export const Container = styled.div`
@@ -34,7 +34,7 @@ export const NameHeader = styled.header`
     font-weight: 900;
     line-height: normal;
     letter-spacing: 1.9px;
-    color: ${({ theme }) => theme.light.headerText};
+    color: ${({ theme }) => theme.headerText};
 `;
 
 export const AboutMe = styled.p`
