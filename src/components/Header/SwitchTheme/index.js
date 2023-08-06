@@ -1,4 +1,3 @@
-import { theme } from "../../../themes";
 import { ToggleBackground, Graphic, GraphicBackground, Wrapper, StyledButton, ToggleWrapper } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 import { selectTheme, toggleTheme } from "./themeSlice";
@@ -8,13 +7,15 @@ export const ThemeButton = () => {
     const theme = useSelector(selectTheme);
 
     return (
-        <Wrapper onClick={() => dispatch(toggleTheme())}>
-            <StyledButton> Dark mode {theme ? "on" : "off"} </StyledButton>
-            <ToggleWrapper>
-                <ToggleBackground />
-                <GraphicBackground />
-                <Graphic />
-            </ToggleWrapper>
+        <Wrapper >
+            <StyledButton onClick={() => dispatch(toggleTheme())}>
+                Dark mode {theme ? "off" : "on"}
+                <ToggleWrapper >
+                    <ToggleBackground />
+                    <GraphicBackground slide={theme ? true : false} />
+                    <Graphic slide={theme ? true : false} />
+                </ToggleWrapper>
+            </StyledButton>
         </Wrapper>
     );
 };

@@ -14,12 +14,15 @@ export const MyPhoto = styled.img`
     border-radius: 384px;
     height: auto;
     width: 100%;
-    background-color: ${({ theme }) => theme.primaryText};
+/*     background-color: ${({ theme }) => theme.primaryText}; */
+    background-color: #6E7E91;
+
 `;
 
 export const Container = styled.div`
     align-items: left;
     font-style: normal;
+
 `;
 
 export const SubHeader = styled.h2`
@@ -27,6 +30,7 @@ export const SubHeader = styled.h2`
     font-weight: 700;
     line-height: 130%; /* 15.6px */
     text-transform: uppercase;
+
 `;
 
 export const NameHeader = styled.header`
@@ -34,7 +38,7 @@ export const NameHeader = styled.header`
     font-weight: 900;
     line-height: normal;
     letter-spacing: 1.9px;
-    color: ${({ theme }) => theme.headerText};
+    color: ${({ theme }) => theme.headerText}; 
 `;
 
 export const AboutMe = styled.p`
