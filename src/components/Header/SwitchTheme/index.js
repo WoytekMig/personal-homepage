@@ -12,8 +12,8 @@ export const ThemeButton = () => {
                 Dark mode {theme ? "off" : "on"}
                 <ToggleWrapper >
                     <ToggleBackground />
-                    <GraphicBackground slide={theme ? true : false} />
-                    <Graphic slide={theme ? true : false} />
+                    <GraphicBackground slide={theme ? theme : undefined} />
+                    <Graphic slide={theme ? theme : undefined} />
                 </ToggleWrapper>
             </StyledButton>
         </Wrapper>

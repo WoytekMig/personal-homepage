@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-/* import { ReactComponent as HireMe } from "./icon/HireMe.svg"; */
 
 export const HeaderWrapper = styled.header`
     display: grid;
@@ -7,7 +6,6 @@ export const HeaderWrapper = styled.header`
     grid-gap: 66px;
     max-height: 384px;
     padding-top: 120px;
-
 `;
 
 export const MyPhoto = styled.img`
@@ -22,7 +20,6 @@ export const MyPhoto = styled.img`
 export const Container = styled.div`
     align-items: left;
     font-style: normal;
-
 `;
 
 export const SubHeader = styled.h2`
@@ -30,7 +27,6 @@ export const SubHeader = styled.h2`
     font-weight: 700;
     line-height: 130%; /* 15.6px */
     text-transform: uppercase;
-
 `;
 
 export const NameHeader = styled.header`

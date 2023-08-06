@@ -3,7 +3,7 @@ import { saveThemeInlocalStorage, themeFromLocalStorage } from "./localStorageTh
 
 const themeSlice = createSlice({
     name: "theme",
-    initialState: { lightTheme: themeFromLocalStorage() },
+    initialState: { lightTheme: themeFromLocalStorage(), },
     reducers: {
         toggleTheme: (state) => {
             state.lightTheme = !state.lightTheme;

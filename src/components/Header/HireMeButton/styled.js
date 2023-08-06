@@ -16,7 +16,7 @@ export const StyledButton = styled.button`
     border: 1px solid  rgba(209, 213, 218, 0.30);
     font-family: inherit;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
     color: white;
     background-color: ${({ theme }) => theme.hireMeButton};
