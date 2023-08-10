@@ -4,16 +4,16 @@ import { selectIsDarkTheme, toggleTheme } from "./themeSlice";
 
 export const ThemeButton = () => {
     const dispatch = useDispatch();
-    const theme = useSelector(selectIsDarkTheme);
+    const isDarkTheme = useSelector(selectIsDarkTheme);
 
     return (
         <Wrapper >
             <StyledButton onClick={() => dispatch(toggleTheme())}>
-                Dark mode {theme ? "off" : "on"}
+                Dark mode {isDarkTheme ? "on" : "off"}
                 <ToggleWrapper >
                     <ToggleBackground />
-                    <GraphicBackground slide={theme.toString() ? theme : undefined} />
-                    <Graphic slide={theme ? theme : undefined} />
+                    <GraphicBackground slide={isDarkTheme} />
+                    <Graphic slide={isDarkTheme} />
                 </ToggleWrapper>
             </StyledButton>
         </Wrapper>
