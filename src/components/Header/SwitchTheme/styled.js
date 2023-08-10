@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
 
 export const StyledButton = styled.button`
     display: inline-flex;
-     justify-content: center;
     align-items: center; 
     gap: 12px;
     text-transform: uppercase;
@@ -34,8 +33,6 @@ export const StyledButton = styled.button`
 `;
 
 export const ToggleWrapper = styled.div`
-    /*      align-items: center;
-        justify-content: center;  */
         color: ${({ theme }) => theme.themeToggleBackground}; 
 `;
 
@@ -52,6 +49,7 @@ export const GraphicBackground = styled(graphicBckgrd)`
     padding: 4px;
     z-index: 0;
     position: absolute;
+    transition: 0.3s;
     ${({ slide }) =>
         slide &&
         css`
@@ -66,6 +64,7 @@ export const Graphic = styled(graphicSun)`
    z-index: 1;
    position: absolute;
    position: relative; 
+   transition: 0.3s;
    ${({ slide }) =>
         slide &&
         css`

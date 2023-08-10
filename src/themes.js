@@ -30,6 +30,8 @@ export const light = {
     themeToggleBackground: color.Iron,
     themeGraphicBackground: color.SlateGrey,
     themeGraphic: color.WhiteLilac,
+    skillsBorderBottom: color.WhiteLilac,
+    skillsBackground: color.White,
 };
 
 export const dark = {
@@ -42,4 +44,6 @@ export const dark = {
     themeToggleBackground: color.MineShaft,
     themeGraphicBackground: color.WhiteLilac,
     themeGraphic: color.Black,
+    skillsBorderBottom: color.Iron,
+    skillsBackground: color.SlateGrey,
 };
