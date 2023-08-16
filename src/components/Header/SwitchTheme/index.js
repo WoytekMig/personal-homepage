@@ -3,17 +3,19 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectIsDarkTheme, toggleTheme } from "./themeSlice";
 
 export const ThemeButton = () => {
+
     const dispatch = useDispatch();
-    const isDarkTheme = useSelector(selectIsDarkTheme);
+    const theme = useSelector(selectIsDarkTheme);
+    console.log("theme colorButton: ", theme);
 
     return (
         <Wrapper >
             <StyledButton onClick={() => dispatch(toggleTheme())}>
-                Dark mode {isDarkTheme ? "on" : "off"}
+                Dark mode {theme ? "on" : "off"}
                 <ToggleWrapper >
                     <ToggleBackground />
-                    <GraphicBackground slide={isDarkTheme} />
-                    <Graphic slide={isDarkTheme} />
+                    <GraphicBackground slide={theme} />
+                    <Graphic slide={theme} />
                 </ToggleWrapper>
             </StyledButton>
         </Wrapper>

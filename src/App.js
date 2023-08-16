@@ -6,32 +6,36 @@ import { selectIsDarkTheme } from "./components/Header/SwitchTheme/themeSlice"
 import Header from './components/Header';
 import logo from './logo.svg';
 import { Main } from './styled';
-import SkillsContainer from './components/Skills';
+import SkillsContainer from './components/Skills/index';
 
 function App() {
   const wchichTheme = useSelector(selectIsDarkTheme);
+  console.log("wchichTheme =", wchichTheme);
   return (
+    <>
+      <ThemeProvider theme={wchichTheme ? dark : light}>
+        <GlobalStyle />
 
-    <ThemeProvider theme={wchichTheme ? dark : light}>
-      <GlobalStyle />
+        <Main>
 
-      <Main>
+          <Header />
+          <SkillsContainer>
 
-        <Header />
-        <SkillsContainer></SkillsContainer>
+            <img src={logo} />
+            <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a>
+              Learn React
+            </a>
 
-        {/*         <img src={logo} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a>
-          Learn React
-        </a>
 
- */}
-      </Main>
+          </SkillsContainer>
+        </Main>
 
-    </ThemeProvider>
+      </ThemeProvider>
+    </>
+
 
   );
 }

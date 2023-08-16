@@ -1,12 +1,15 @@
 import { Header, Wrapper } from "./styled";
 
 const SkillsContainer = () => {
+    <>
+        Elo
+        <Wrapper>
+            <Header>My skillset includes 🛠️</Header>
+            {/*       <ItemsList content={list}></ItemsList> */}
 
-    <Wrapper>
-        <Header>My skillset includes 🛠️</Header>
-        {/*       <ItemsList content={list}></ItemsList> */}
+        </Wrapper>
+    </>
 
-    </Wrapper>
 };
 
 export default SkillsContainer;

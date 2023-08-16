@@ -3,16 +3,16 @@ import { saveThemeInlocalStorage, themeFromLocalStorage } from "./localStorageTh
 
 const themeSlice = createSlice({
     name: "theme",
-    initialState: { isDarkTheme: themeFromLocalStorage(), }, /* themeFromLocalStorage() */
+    initialState: themeFromLocalStorage(),
     reducers: {
         toggleTheme: (state) => {
-            state.isDarkTheme = !state.isDarkTheme;
-            saveThemeInlocalStorage(state.isDarkTheme);
+            state.isTheme = !state.isTheme;
+            saveThemeInlocalStorage(state.isTheme);
         },
     },
 });
 
-export const { toggleTheme } = themeSlice.actions;
 export const selectThemeState = (state) => state.theme;
-export const selectIsDarkTheme = (state) => selectThemeState(state).isDarkTheme;
+export const { toggleTheme } = themeSlice.actions;
+export const selectIsDarkTheme = (state) => selectThemeState(state).isTheme;
 export default themeSlice.reducer;
