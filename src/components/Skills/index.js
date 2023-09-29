@@ -1,15 +1,14 @@
-import { Header, Wrapper } from "./styled";
+import { Header, Item, ItemsList, Wrapper } from "./styled";
 
-const SkillsContainer = () => {
-    <>
-        Elo
-        <Wrapper>
-            <Header>My skillset includes 🛠️</Header>
-            {/*       <ItemsList content={list}></ItemsList> */}
-
-        </Wrapper>
-    </>
-
-};
+const SkillsContainer = ({ header, content }) => (
+  <Wrapper>
+    <Header>{header}</Header>
+    <ItemsList>
+      {content.map((skill) => (
+        <Item key={skill}>{skill}</Item>
+      ))}
+    </ItemsList>
+  </Wrapper>
+);
 
 export default SkillsContainer;
