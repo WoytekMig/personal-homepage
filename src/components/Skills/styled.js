@@ -6,13 +6,12 @@ export const Wrapper = styled.div`
   max-width: 1216px;
   background-color: ${({ theme }) => theme.skillsBackground};
   padding: 32px;
+  margin-bottom: 72px;
 `;
 
 export const Header = styled(StyledHeader)`
   border-bottom: 1px solid;
   border-color: ${({ theme }) => theme.skillsBorderBottom};
-  padding-top: 32px;
-  padding-bottom: 15px;
 `;
 
 export const ItemsList = styled(StyledContent)`
