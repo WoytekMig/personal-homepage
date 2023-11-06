@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled(StyledHeader)`
+  padding-bottom: 18px;
   border-bottom: 1px solid;
   border-color: ${({ theme }) => theme.skillsBorderBottom};
 `;
