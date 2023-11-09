@@ -35,7 +35,7 @@ export const light = {
   themeToggleBackground: color.Iron,
   themeGraphicBackground: color.SlateGrey,
   themeGraphic: color.WhiteLilac,
-  skillsBorderBottom: color.IronLight,
+  skillsBorderBottom: color.Mercury,
   skillsBackground: color.White,
 };
 
@@ -49,7 +49,7 @@ export const dark = {
   themeToggleBackground: color.MineShaft,
   themeGraphicBackground: color.WhiteLilac,
   themeGraphic: color.Black,
-  skillsBorderBottom: color.Iron,
+  skillsBorderBottom: color.Mercury,
   skillsBackground: color.SlateGreyLight,
 };
 
@@ -59,6 +59,13 @@ export const StyledHeader = styled.header`
   line-height: normal;
   letter-spacing: 1.5px;
   color: ${({ theme }) => theme.headerText};
+`;
+
+export const SubHeader = styled.h2`
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 130%; /* 15.6px */
+  text-transform: uppercase;
 `;
 
 export const StyledContent = styled.article`
