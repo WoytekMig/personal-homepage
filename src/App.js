@@ -8,10 +8,13 @@ import logo from "./logo.svg";
 import { Main } from "./styled";
 import SkillsContainer from "./components/Skills/index";
 import { futureSkills, skills } from "./components/Skills/skillsList";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Footer from "./components/Footer/Footer";
+import { useQuery } from "@tanstack/react-query";
 
 function App() {
   const wchichTheme = useSelector(selectIsDarkTheme);
-  /*   console.log("wchichTheme =", wchichTheme); */
+
   return (
     <>
       <ThemeProvider theme={wchichTheme ? dark : light}>
@@ -28,13 +31,14 @@ function App() {
             content={futureSkills}
           />
 
+          <Portfolio header={"Portfolio"} subHeader={"My recent projects"} />
+
           <img src={logo} />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a>Learn React</a>
-
-          {/*  </SkillsContainer>  */}
+          <Footer />
         </Main>
       </ThemeProvider>
     </>
