@@ -19,7 +19,7 @@ const Footer = () => (
         target="_blank"
         rel="noreferrer"
       >
-        wojciechjanmigdal@gmail.com
+        WojciechJanMigdal@gmail.com
       </EmailAddress>
       <Content>
         I'm open to new opportunities 🧐 If you need a task-focused, very
