@@ -15,7 +15,7 @@ const Footer = () => (
     <FooterWrapper>
       <Header>Let's talk !</Header>
       <EmailAddress
-        href="mailto:wojciechjanmigdal@gmail.com"
+        href="mailto:WojciechJanMigdal@gmail.com"
         target="_blank"
         rel="noreferrer"
       >
